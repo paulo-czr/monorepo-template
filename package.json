@@ -1,0 +1,30 @@
+{
+  "name": "monorepo-paulo",
+  "version": "1.0.0",
+  "description": "Monorepo do Paulo",
+  "keywords": [],
+  "author": "Paulo Cesar",
+  "license": "ISC",
+  "scripts": {
+    "format:all": "turbo format",
+    "lint:all": "turbo lint",
+    "new:project": "node scripts/create-project.mjs"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "12.23.0",
+      "onFail": "download"
+    }
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher"
+    ]
+  },
+  "packageManager": "pnpm@12.23.0",
+  "type": "module",
+  "devDependencies": {
+    "turbo": "^2.11.13"
+  }
+}
