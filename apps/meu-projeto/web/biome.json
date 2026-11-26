@@ -1,0 +1,16 @@
+{
+    "extends": ["config/biome"],
+    "root": false,
+    "linter": {
+        "rules": {
+            "suspicious": {
+                "noUnknownAtRules": "off"
+            }
+        },
+        "domains": {
+            "react": "recommended",
+			"test": "recommended",
+			"turborepo": "all"
+        }
+    }
+}
