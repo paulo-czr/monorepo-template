@@ -1,0 +1,28 @@
+{
+  "name": "config",
+  "version": "1.0.0",
+  "description": "Configuração compartilhada do monorepo",
+  "private": true,
+  "scripts": {
+    "build": "tsup"
+  },
+  "exports": {
+    "./biome": "./dist/biome.json",
+    "./typescript": "./dist/tsconfig.json",
+    "./jest": {
+      "types": "./dist/jest.config.d.ts",
+      "import": "./dist/jest.config.mjs",
+      "require": "./dist/jest.config.js"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@12.23.0",
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "jest": "catalog:",
+    "shx": "^0.4.0",
+    "tsup": "^8.5.1"
+  }
+}
